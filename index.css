@@ -217,3 +217,106 @@ html {
   color: var(--sub-heading-text-color);
   line-height: 1.2;
 }
+
+.widget__section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+  gap: 2rem;
+}
+
+@media (max-width: 950px) {
+  .widget__section {
+    gap: 1rem;
+  }
+}
+
+.widget-container {
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+  border-radius: var(--card-radius);
+}
+
+.phone-overlay {
+  width: 781px;
+  height: 506px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 2;
+}
+
+.phone-image {
+  margin: 0 auto;
+}
+
+.orange-gradient {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.widget-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  z-index: 4;
+}
+
+.phone-image {
+  margin: 0 auto;
+  width: 279px;
+}
+
+.watch-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 2;
+}
+
+.watch-screen {
+  margin: 0 auto;
+  width: 226px;
+}
+
+.blue-gradient {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.phone-card-label {
+  position: absolute;
+  width: 100%;
+  bottom: 2rem;
+  z-index: 3;
+  text-align: center;
+  font-size: 1.625rem;
+  font-weight: 500;
+  font-family: system-ui, ui-rounded;
+  color: #fff;
+  z-index: 5;
+}
+
+.watch-card-label {
+  position: absolute;
+  width: 100%;
+  bottom: 2rem;
+  z-index: 3;
+  text-align: center;
+  font-size: 1.625rem;
+  font-weight: 500;
+  font-family: system-ui, ui-rounded;
+  color: #fff;
+  z-index: 5;
+}
