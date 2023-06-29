@@ -13,8 +13,8 @@
   --page-background-color: #fff;
   --card-background-color: rgb(0 0 0/5%);
   --body-text-color: rgba(0, 0, 0, 0.65);
-  --heading-text-color: #000;
-  --sub-heading-text-color: rgba(0, 0, 0, 0.5);
+  /* --heading-text-color: #000; */
+  /* --sub-heading-text-color: rgba(0, 0, 0, 0.5); */
   --store-button-color: #000;
   --subdued-text: rgba(0, 0, 0, 0.4);
   /* --background-color: #fff; */
@@ -132,4 +132,44 @@ html {
     width: 120px;
     right: 90%;
   }
+}
+
+.title {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+.app-icon {
+  max-width: 114px;
+  margin: 0 auto;
+  filter: drop-shadow(0 12px 29px rgb(0 0 0/20%))
+    drop-shadow(0 2px 5px rgb(0 0 0/15%));
+}
+
+@media (max-width: 1050px) {
+  .app-icon {
+    max-width: 90px;
+  }
+}
+
+.app-title-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.title-heading {
+  margin: 0;
+  line-height: 1;
+  font-size: 2.5em;
+  color: var(--heading-text-color);
+}
+
+.title-subheading {
+  font-size: 1.875em;
+  font-weight: 500;
+  color: var(--sub-heading-text-color);
+  line-height: 1.2;
 }
