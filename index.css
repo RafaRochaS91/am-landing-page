@@ -36,10 +36,28 @@ html {
 }
 
 .layout__wrapper {
-  width: auto;
-  margin: 0 1rem;
-  gap: 1rem;
-  padding: 1em 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 90%;
+  padding: 5em 0 3em;
+  display: grid;
+  grid-gap: 2rem;
+  gap: 2rem;
+}
+
+@media (max-width: 950px) {
+  .layout__wrapper {
+    width: auto;
+    margin: 0 1rem;
+    gap: 1rem;
+    padding: 1em 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .layout__wrapper {
+    padding: 1rem 0 3rem;
+  }
 }
 
 .gradient {
@@ -62,6 +80,12 @@ html {
   padding: 4rem 2rem 0;
   grid-gap: 1.5rem;
   gap: 1.5rem;
+}
+
+@media (max-width: 700px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
 }
 
 .hero__container {
@@ -118,6 +142,14 @@ html {
   }
 }
 
+@media (max-width: 700px) {
+  .card__right {
+    top: inherit;
+    bottom: 35%;
+    left: 75%;
+  }
+}
+
 .card__left {
   position: absolute;
   bottom: 10%;
@@ -134,11 +166,23 @@ html {
   }
 }
 
+@media (max-width: 700px) {
+  .card__left {
+    right: 75%;
+  }
+}
+
 .title {
   text-align: center;
   display: flex;
   flex-direction: column;
   gap: 1.5em;
+}
+
+@media (max-width: 700px) {
+  .title {
+    grid-row-start: 1;
+  }
 }
 
 .app-icon {
